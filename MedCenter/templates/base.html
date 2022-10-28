@@ -1,0 +1,18 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home_view' %}"><b>Главная</b></a>
+        <a href="{% url 'contacts_view' %}"><b>Контакты</b></a>
+        <a href="{% url 'info_view' %}"><b>Информация</b></a>
+    </nav>
+{% block page-content %}
+{% endblock %}
+</body>
+</html>

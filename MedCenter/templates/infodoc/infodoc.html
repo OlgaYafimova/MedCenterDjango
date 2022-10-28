@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block page-content %}
+<div>
+    {% for item in key_all_about1doctor %}
+        <div>
+            <h2>{{item.specialization}}</h2>
+            <h3>{{item.full_name}}</h3>
+            <p>Расписание: {{item.shedule}}</p>
+            <p>№ кабинета {{item.office}}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

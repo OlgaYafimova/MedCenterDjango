@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block page-content %}
+<div>
+    {% for item in key_all_about_doctors %}
+        <a href="{% url 'info_docview' item.doctors_id %}">
+            <div class="doctor1_info">
+                <h2>{{item.specialization}}</h2>
+                <h3>{{item.full_name}}</h3>
+                <p>Расписание: {{item.shedule}}</p>
+                <p>№ кабинета {{item.office}}</p>
+            </div>
+        </a>
+    {% endfor %}
+</div>
+{% endblock %}
