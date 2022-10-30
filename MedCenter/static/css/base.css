@@ -32,6 +32,10 @@ nav a:hover{
     background-color:white;
 }
 
+.doctor1_info:hover{
+    background-color: dodgerblue;
+}
+
 .img_medcent_home{
     width: 100%;
     height: 100%;
